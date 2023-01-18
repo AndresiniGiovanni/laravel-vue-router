@@ -19,7 +19,7 @@
             <p class="card-text">{{ truncateContent(project.content) }}</p>
             <router-link
               class="btn btn-primary"
-              :to="{ name: 'single-post', params: { slug: project.slug } }"
+              :to="{ name: 'single-project', params: { slug: project.slug } }"
               >Vedi il progetto</router-link
             >
           </div>
