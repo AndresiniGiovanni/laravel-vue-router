@@ -10,43 +10,41 @@ import SingleProject from "./pages/SingleProject.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    [
-      {
-        path: "/",
-        name: "home",
-        component: HomePage,
-      },
+    {
+      path: "/",
+      name: "home",
+      component: HomePage,
+    },
 
-      {
-        path: "/about",
-        name: "about",
-        component: AboutUs,
-      },
+    {
+      path: "/about",
+      name: "about",
+      component: AboutUs,
+    },
 
-      {
-        path: "/contact",
-        name: "contact",
-        component: ContactUs,
-      },
+    {
+      path: "/contact",
+      name: "contact",
+      component: ContactUs,
+    },
 
-      {
-        path: "/projects",
-        name: "projects",
-        component: ProjectList,
-      },
+    {
+      path: "/projects",
+      name: "projects",
+      component: ProjectList,
+    },
 
-      {
-        path: "/projects/:slug",
-        name: "single-project",
-        component: SingleProject,
-      },
+    {
+      path: "/projects/:slug",
+      name: "single-project",
+      component: SingleProject,
+    },
 
-      {
-        path: "/*",
-        name: "not-found",
-        component: NotFound,
-      },
-    ],
+    {
+      path: "/*",
+      name: "not-found",
+      component: NotFound,
+    },
   ],
 });
 
