@@ -1,6 +1,4 @@
-// COLORS
-$bg-color: #ea1414;
-$text-color: #333;
+
 
 @use "./partials/variables" as *;
 
@@ -10,3 +8,6 @@ $fa-font-path: "../webfonts";
 
 @import "bootstrap/scss/bootstrap";
 
+body{
+    background-color: $bg-color;
+}

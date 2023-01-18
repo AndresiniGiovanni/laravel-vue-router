@@ -1,14 +1,14 @@
 <template>
   <section>
-    <h1>Lista dei projects</h1>
+    <h1 class="text-white mt-5 mb-5 text-center">Projects List</h1>
 
     <div class="row">
       <div
         class="col-12 col-md-4"
         v-for="(project, index) in projects"
-        key="index"
+        :key="index"
       >
-        <div class="card" style="width: 18rem">
+        <div class="card mb-3" style="width: 20rem">
           <img
             :src="`${store.imageBasePath}${project.cover_img}`"
             class="card-img-top"
@@ -20,7 +20,7 @@
             <router-link
               class="btn btn-primary"
               :to="{ name: 'single-project', params: { slug: project.slug } }"
-              >Vedi il progetto</router-link
+              >Show Project</router-link
             >
           </div>
         </div>

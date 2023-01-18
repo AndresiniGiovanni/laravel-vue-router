@@ -1,5 +1,5 @@
 <template>
-  <div>sono HomePage</div>
+  <h1 class="text-white mt-3 text-center">HomePage</h1>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template>
-  <!-- <header>
+  <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,7 +29,7 @@
         </div>
       </div>
     </nav>
-  </header> -->
+  </header>
 </template>
 
 <script>
@@ -45,12 +45,16 @@ export default {
 
         {
           label: "Projects",
-          routeName: "Projects",
+          routeName: "projects",
         },
 
         {
           label: "Chi siamo",
           routeName: "about",
+        },
+        {
+          label: "Contact",
+          routeName: "contact",
         },
       ],
     };
@@ -58,4 +62,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+a {
+  color: white;
+}
+
+</style>

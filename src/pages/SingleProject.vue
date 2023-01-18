@@ -1,10 +1,10 @@
 <template>
-  <section v-if="project">
+  <section class="text-white mt-5" v-if="project">
     <h1>{{ project.title }}</h1>
     <img
       :src="`${store.imageBasePath}${project.cover_img}`"
       class="card-img-top"
-      alt="..."
+      alt=""
     />
     <p>{{ project.content }}</p>
     <div v-if="project.type">
@@ -12,12 +12,12 @@
     </div>
 
     <div v-if="project.technologies && project.technologies.length">
-      <h5>Technologies</h5>
+      <h5>Technologies:</h5>
       <div>
         <span
           v-for="(technology, index) in project.technologies"
           :key="index"
-          class="badge bg-info text-dark"
+          class="badge bg-info text-dark m-1"
           >{{ technology.name }}</span
         >
       </div>
