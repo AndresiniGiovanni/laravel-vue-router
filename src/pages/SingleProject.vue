@@ -1,12 +1,12 @@
 <template>
-  <section class="text-white mt-5" v-if="project">
-    <h1>{{ project.title }}</h1>
+  <section class="container text-white mt-5" v-if="project">
+    <h1 class="pt-5" style="font-size: 48px;">{{ project.title }}</h1>
     <img
       :src="`${store.imageBasePath}${project.cover_img}`"
       class="card-img-top"
       alt=""
     />
-    <p>{{ project.content }}</p>
+    <p class="mb-5 mt-5" style="font-size: 20px;">{{ project.content }}</p>
     <div v-if="project.type">
       <h5>Type: {{ project.type.name }}</h5>
     </div>
@@ -17,7 +17,7 @@
         <span
           v-for="(technology, index) in project.technologies"
           :key="index"
-          class="badge bg-info text-dark m-1"
+          class="badge  text-dark m-1 my-badge"
           >{{ technology.name }}</span
         >
       </div>

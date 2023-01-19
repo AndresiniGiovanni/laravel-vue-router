@@ -1,5 +1,3 @@
-
-
 @use "./partials/variables" as *;
 
 $fa-font-path: "../webfonts";
@@ -8,6 +6,60 @@ $fa-font-path: "../webfonts";
 
 @import "bootstrap/scss/bootstrap";
 
-body{
-    background-color: $bg-color;
+body {
+  background-color: $bg-color;
+  font-family: 'sans-serif', 'helvetica', 'arial';
 }
+
+.my-container{
+    height: 500px;
+}
+
+.my-wallpaper {
+  background-image: url(../img/homepage.jpg);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat;
+  
+}
+
+
+main{
+  height: 100vh;
+}
+
+.home-page-style {
+  font-size: 54px;
+  border: 2px solid white;
+  padding: 2rem;
+}
+
+
+// SINGLE PROJECT VIEW 
+
+.my-badge{
+    background-color: lightblue;
+
+    
+}
+
+.my-badge:hover{
+    transition: 500ms;
+
+    background-color: white;
+}
+
+// PROJECTS CARDS LIST
+
+.my-card{
+    margin-bottom: 4rem;
+}
+
+.my-card:hover{
+    transition: 500ms;
+    transform: scale(1.1);
+}
+

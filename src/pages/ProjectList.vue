@@ -1,22 +1,22 @@
 <template>
-  <section>
-    <h1 class="text-white mt-5 mb-5 text-center">Projects List</h1>
+  <section class="container">
+    <h1 style="font-size: 42px;" class="text-white mt-5 mb-5 text-center text-uppercase">Projects List</h1>
 
     <div class="row">
       <div
-        class="col-12 col-md-4"
+        class="col-12 col-md-4 "
         v-for="(project, index) in projects"
         :key="index"
       >
-        <div class="card mb-3" style="width: 20rem">
+        <div class="card  gap-3 my-card" style="width: 20rem">
           <img
             :src="`${store.imageBasePath}${project.cover_img}`"
             class="card-img-top"
-            alt="..."
+            alt=""
           />
           <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
-            <p class="card-text">{{ truncateContent(project.content) }}</p>
+            <p style="font-size: 14px;" class="card-text">{{ truncateContent(project.content) }}</p>
             <router-link
               class="btn btn-primary"
               :to="{ name: 'single-project', params: { slug: project.slug } }"
@@ -41,6 +41,7 @@ export default {
       CurrentPage: 1,
       total: 0,
       contentMaxLen: 100,
+      active: false,
     };
   },
   methods: {

@@ -1,5 +1,9 @@
 <template>
-  <h1 class="text-white mt-3 text-center">HomePage</h1>
+  <div class="my-wallpaper">
+    <div class="container my-container d-flex justify-content-center align-items-center">
+      <h1 class="text-white home-page-style rounded-4">HomePage</h1>
+    </div>
+  </div>
 </template>
 
 <script>

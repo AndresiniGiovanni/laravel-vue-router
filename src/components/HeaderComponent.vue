@@ -14,14 +14,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb- mb-lg-0">
             <li
               class="nav-item"
               v-for="(item, index) in menuItems"
               :key="index"
             >
-              <router-link :to="{ name: item.routeName }" class="nav-link">
+              <router-link :to="{ name: item.routeName }" style="font-size: 18px; ;" class="nav-link text-white mt-2">
                 {{ item.label }}
               </router-link>
             </li>
@@ -49,7 +49,7 @@ export default {
         },
 
         {
-          label: "Chi siamo",
+          label: "About Us",
           routeName: "about",
         },
         {
